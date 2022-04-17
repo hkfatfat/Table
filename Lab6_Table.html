@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+   <!--
+      New Perspectives on HTML5 and CSS3
+      Lab 6
+
+      The Living World: April 14
+      Author: Poon, Chung Lai
+      Date:  6 Mar 2022
+
+      Filename: Lab6_Table.html
+   -->
+
+    <head>
+        <!-- Table Style -->
+        <style>
+            table {
+                font-size: 1.3em;
+                border-collapse: collapse;
+            }
+            td {
+                border-width: 0.5mm;
+            }
+            td#td-1 {
+                font-family: Georgia;
+                color: white;
+            }
+            td#td-2 {
+                border-width: 1mm;
+                border-color: green;
+            }
+            img {
+                border-radius: 0.5rem;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- Table contents -->
+        <TABLE BORDER=2 BGCOLOR=BEIGE CELLSPACING=0 CELLPADDING=5 width=680>
+	        <TR><TD rowspan=7 ><img src="table_image.JPG"> </TD> 
+                <TD id="td-1" colspan=5 BGCOLOR=orangered ALIGN=CENTER > It's a maze </TD></TR>
+            <TR><TD rowspan=5> You can span down. </TD> <TD colspan=3 rowspan=1> You can span accross </TD></TR>
+	        <TR><TD colspan=2> It's like a puzzle </TD> <TD id="td-2" rowspan=5> Over here </TD></TR>
+            <TR><TD rowspan=3> This way </TD> <TD> That way </TD></TR>
+            <TR><TD rowspan=3> Where am I? </TD></TR>
+            <TR></TR>
+        </TABLE>
+    </body>
+</html>
